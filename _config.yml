@@ -3,7 +3,7 @@
 title: Joan Bono
 email: joan@bono.cat
 description: > # this means to ignore newlines until "baseurl:"
-  twitter: <a href="https://twitter.com/joan_bono">@joan_bono</a><br>Website: <a href="https://joanbono.github.io/">joanbono.github.io</a><br>Company: <a href="https://www.ackcent.com/">Ackcent</a><br><img src="https://avatars0.githubusercontent.com/u/7288621?v=3&u=bb3a80b388aefc8bc7979562aed909afccdacb50&s=400" alt="MU">
+  twitter: <a href="https://twitter.com/joan_bono">@joan_bono</a><br>Website: <a href="https://joanbono.github.io/">joanbono.github.io</a><br>Company: <a href="https://www.ackcent.com/">Ackcent</a><br><img src="https://raw.githubusercontent.com/joanbono/joanbono.github.io/master/images/profile.png" alt="MU">
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
