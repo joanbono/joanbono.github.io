@@ -14,9 +14,7 @@ I created an HTML page:
 
 And then, I recorded this video:
 
-~~~~
-THE VIDEO IS IN THE KITCHEN!! I'll upload to Youtube :D
-~~~~
+[![YouTube Viedo](http://img.youtube.com/vi/dyFCOTNaHW8/0.jpg)](http://www.youtube.com/watch?v=dyFCOTNaHW8)
 
 After that, I sent all the information to the UPV's IT Security Officer.
 
