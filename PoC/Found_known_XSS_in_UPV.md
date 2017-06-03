@@ -41,7 +41,7 @@ In English is something like this:
 >
 >Regards and thanks for the collaboration
 
-I was really happy that I reported this 4 months after found it, and just some days ago this man found it too! :smiley:
+I was really happy that I reported this 4 months after found it, and just some days ago this man found it too!
 
 I sent to a friend living out of Spain my `cookie`, because I want to know how was working this **Magic IP checking**. He hijacks my session without any problem, but I know this is not a problem to fix, I'm sure that this is a **known feature**!
 
