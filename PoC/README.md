@@ -24,7 +24,7 @@ More or less, the binnacle was:
 
 + **2016, 21st of December:** Found the XSS.
 + **2017, 10th of April:** Report the XSS to the UPV's IT Security Officer.
-+ **2017, 10th of April:** UPV's IT Security Officer told me that they know this XSS. It was really surprising because the "known" XSS is not patched.
++ **2017, 10th of April:** UPV's IT Security Officer told me that they know this XSS. It was really surprising because the "known" XSS was not patched.
 + **2017, 11st of April:** The XSS is patched.
 
 So, the answer I got from the UPV's IT Security Officer was:
