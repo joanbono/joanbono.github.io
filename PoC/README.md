@@ -10,7 +10,7 @@ I was really surprised when an alert box prompts in my browser. So, I decide to 
 
 I created an HTML page:
 
-![](../img/001.png)
+![](../images/xss_001.png)
 
 And then, I recorded this video:
 
@@ -29,7 +29,7 @@ More or less, the binnacle was:
 
 So, the answer I got from the UPV's IT Security Officer was:
 
-![](img/002.png)
+![](../images/xss_002.png)
 
 In English is something like this:
 
