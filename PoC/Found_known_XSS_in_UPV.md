@@ -1,4 +1,4 @@
-# How I found a XSS in the UPV
+# How I found a known XSS in the UPV
 
 I was surfing across the `intercambios.upv.es` website, and suddenly, I changed the language from the URL, where I tried to put a really basic `XSS` injection:
 
