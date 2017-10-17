@@ -23,7 +23,7 @@ The connections with the **Bus Pirate**:
 
 As seen in the picture:
 
-![](images/flas_pm3_002.png)
+![](images/flas_pm3_0024.png)
 
 So, the steps are the following:
 
