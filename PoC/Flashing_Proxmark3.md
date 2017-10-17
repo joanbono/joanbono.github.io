@@ -8,7 +8,7 @@ First of all, the connection.
 
 The **Proxmark3** has `JTAG` pinout, so, let use them!
 
-![](images/flas_pm3_001.png)
+![](../images/flas_pm3_001.png)
 
 The connections with the **Bus Pirate**:
 
@@ -23,7 +23,7 @@ The connections with the **Bus Pirate**:
 
 As seen in the picture:
 
-![](images/flas_pm3_0024.png)
+![](../images/flas_pm3_002.png)
 
 So, the steps are the following:
 
