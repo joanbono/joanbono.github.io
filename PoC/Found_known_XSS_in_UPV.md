@@ -18,7 +18,7 @@ And then, I recorded this video:
 
 After that, I sent all the information to the UPV's IT Security Officer.
 
-More or less, the binnacle was:
+More or less, the timeline was:
 
 + **2016, 21st of December:** Found the XSS.
 + **2017, 10th of April:** Report the XSS to the UPV's IT Security Officer.
