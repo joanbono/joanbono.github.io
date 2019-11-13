@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://joanbono.github.io/ipa/unc0ver.ipa</string>
+				</dict>
+				<dict>
+                    <key>kind</key>
+                    <string>display-image</string>
+                    <key>needs-shine</key>
+                    <false/>
+                    <key>url</key>
+                    <string>https://raw.githubusercontent.com/pwn20wndstuff/Undecimus/master/Undecimus/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60%403x.png?token=AlyO4xDujoguob2DCFfUbNI8jO82OyCgks5bx5ZPwA%3D%3D</string>
+	            </dict>
+	            <dict>
+	                <key>kind</key>
+	                <string>full-size-image</string>
+	                <key>needs-shine</key>
+	                <false/>
+	                <key>url</key>
+	                <string>https://raw.githubusercontent.com/pwn20wndstuff/Undecimus/master/Undecimus/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60%403x.png?token=AlyO4xDujoguob2DCFfUbNI8jO82OyCgks5bx5ZPwA%3D%3D</string>
+	            </dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.comilona.joan</string>
+				<key>bundle-version</key>
+				<string>420.4.20</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>subtitle</key>
+                <string>Ignition</string>
+				<key>title</key>
+				<string>Unc0ver (Official)</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
