@@ -23,7 +23,3 @@ Using a Bus Pirate to unbrick the **Proxmark3 RV3.0**.
 Analyzing a suspicious email in my inbox.
 
 ***
-
-## [Test ipa](PoC/test_ipa.md)
-
-Analyzing a suspicious email in my inbox.
