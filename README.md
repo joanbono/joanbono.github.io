@@ -23,3 +23,7 @@ Using a Bus Pirate to unbrick the **Proxmark3 RV3.0**.
 Analyzing a suspicious email in my inbox.
 
 ***
+
+## [Upgrading Bus Pirate Firmware](PoC/Upgrading_BusPirate.md)
+
+Upgrading Bus Pirate v3 and v4.
