@@ -27,3 +27,9 @@ Analyzing a suspicious email in my inbox.
 ## [Upgrading Bus Pirate Firmware](PoC/Upgrading_BusPirate.md)
 
 Upgrading Bus Pirate v3 and v4.
+
+***
+
+## [How to kill Paraulògic Game's fun](PoC/Paraulogic_solve.md)
+
+Solving everyday's Paraulògic game, killing the fun.
