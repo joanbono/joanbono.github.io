@@ -1,4 +1,4 @@
-# How to kill Paraulògic Game's fun
+# How to kill Paraulògic's fun
 
 This Christmas I started playing [Paraulògic](https://paraulogic.rodamots.cat/) with my family.
 
