@@ -60,7 +60,7 @@ HTTP/2 200 OK
         "ant": "ant",
         "anta": "anta",
         "antedata": "antedata",
-        "antena": "antena
+        "antena": "antena",
         [...]
     }
 }
