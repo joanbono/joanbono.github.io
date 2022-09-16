@@ -221,16 +221,51 @@ $ sudo tcpdump -i en0 -nn udp and port 51820
 
 ## Intercept the traffic
 
-After installing the application, it's time to redirect all the incoming traffic to Burp port. This section should be done with macOS `pf`. I'm still digging into this. The closest I've been was using the following redirection rules:
+After installing the application, it's time to redirect all the incoming traffic to Burp port. This section should be done with macOS `pf` (Thanks @virtualminds for the help in this part):
 
-```pf
-rdr on utun3 proto tcp from any to any port 80 -> 127.0.0.1 port 8080
-rdr on utun3 proto tcp from any to any port 443 -> 127.0.0.1 port 8080
+```shell
+echo """
+nat on en0 from 10.0.10.0/24 to any -> (en0)
+rdr on utun3 inet proto tcp from any to any port {443, 80} -> 10.0.10.1 port 8080
+""" | sudo pfctl -a com.apple/wireguard -Ef -
 ```
 
-But I did not manage to have it working yet :sad:
+Open Burp listening on the Wireguard IP (or all interfaces if you prefer) and enable Invisible Proxy.
 
-Will update this as soon as I have it.
+Open the Nviso's Flutter app, and try to make an HTTP request. You should see it in Burp:
+
+![](../images/wireguard_002.png)
+
+Next, attempt to perform the HTTPS Request, and it will fail:
+
+![](../images/wireguard_003.png)
+
+Time to use the [`disable-flutter-tls-verification.js`](https://github.com/NVISOsecurity/disable-flutter-tls-verification) Frida script:
+
+```shell
+$ frida -U -l disable-flutter-tls.js -f be.nviso.flutterApp --no-pause
+     ____
+    / _  |   Frida 15.1.8 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+Spawning `be.nviso.flutterApp`...
+[+] iOS environment detected
+[+] Flutter library found
+[!] ssl_verify_peer_cert not found. Trying again...
+Spawned `be.nviso.flutterApp`. Resuming main thread!
+[iPhone::be.nviso.flutterApp]-> [+] ssl_verify_peer_cert found at offset: 0x3f2444
+```
+
+Attempt to make the request again:
+
+![](../images/wireguard_004.png)
+
+It works!
 
 ## References
 + https://barrowclift.me/post/wireguard-server-on-macos
