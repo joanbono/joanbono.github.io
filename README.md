@@ -33,3 +33,10 @@ Upgrading Bus Pirate v3 and v4.
 ## [How to kill Paraulògic's fun](PoC/Paraulogic_solve.md)
 
 Solving everyday's Paraulògic game, killing the fun.
+
+*** 
+
+
+## [Non-aware Proxy apps with WireGuard](PoC/Non-aware_Proxyguard.md)
+
+Testing non-aware proxy apps (Eg: Flutter mobile apps) without painful configurations.
