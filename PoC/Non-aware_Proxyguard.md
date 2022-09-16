@@ -20,7 +20,9 @@ $ mkdir /usr/local/etc/wireguard/
 ```
 
 Create the [following files](https://barrowclift.me/post/wireguard-server-on-macos) inside. Replace the interface you have on your Macbook (`en0` in this case), and the internal IP range you want to use (`10.0.10.0/24` in the example):
+
 + `postup.sh` 
+
 ```shell
 #!/bin/sh
 
@@ -42,7 +44,8 @@ echo 'nat on en0 from 10.0.10.0/24 to any -> (en0)' | \
     sed 's%Token : \(.*\)%\1%' > /usr/local/var/run/wireguard/pf_wireguard_token.txt   
 ```
 
-+ `postdown.sh` 
++ `postdown.sh`
+
 ```shell
 #!/bin/sh
 
@@ -73,6 +76,7 @@ $ chmod u+x /usr/local/etc/wireguard/*.sh
 ```
 
 Generate a key pair for the server and for the device. Store them safely:
+
 ```sh
 $ umask 077
 $ wg genkey | tee privatekey | wg pubkey > publickey
@@ -100,6 +104,7 @@ AllowedIPs = 10.0.10.10/32
 ```
 
 Let's break it down:
+
 + Interface
     + `Address` will be the server address in the VPN.
     + `PrivateKey` is the private key for the server.
@@ -218,7 +223,7 @@ $ sudo tcpdump -i en0 -nn udp and port 51820
 
 After installing the application, it's time to redirect all the incoming traffic to Burp port. This section should be done with macOS `pf`. I'm still digging into this. The closest I've been was using the following redirection rules:
 
-```
+```pf
 rdr on utun3 proto tcp from any to any port 80 -> 127.0.0.1 port 8080
 rdr on utun3 proto tcp from any to any port 443 -> 127.0.0.1 port 8080
 ```
