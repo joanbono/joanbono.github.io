@@ -2,7 +2,7 @@
 
 This post is heavily based on [Nviso's post about intercepting Flutter traffic on iOS](https://blog.nviso.eu/2020/06/12/intercepting-flutter-traffic-on-ios/), but instead of using OpenVPN, we are going to use [Wireguard](https://www.wireguard.com/).
 
-First of all, thanks to my friend @damiapoquet, for his help during the painful troubleshooting.
+First of all, thanks to my friend [@damiapoquet](https://github.com/damiapoquet), for his help during the painful troubleshooting.
 
 ## Requirements:
 + [Nviso Flutter Test apps](https://github.com/NVISOsecurity/blogposts/tree/master/flutter-testapps)
@@ -221,7 +221,7 @@ $ sudo tcpdump -i en0 -nn udp and port 51820
 
 ## Intercept the traffic
 
-After installing the application, it's time to redirect all the incoming traffic to Burp port. This section should be done with macOS `pf` (Thanks @virtualminds for the help in this part):
+After installing the application, it's time to redirect all the incoming traffic to Burp port. This section should be done with macOS `pf` (Thanks [@virtualminds](https://github.com/virtualminds) for the help in this part):
 
 ```shell
 echo """
