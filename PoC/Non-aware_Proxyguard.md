@@ -224,7 +224,7 @@ $ sudo tcpdump -i en0 -nn udp and port 51820
 After installing the application, it's time to redirect all the incoming traffic to Burp port. This section should be done with macOS `pf` (Thanks [@virtualminds](https://github.com/virtualminds) for the help in this part):
 
 ```shell
-echo """
+$ echo """
 nat on en0 from 10.0.10.0/24 to any -> (en0)
 rdr on utun3 inet proto tcp from any to any port {443, 80} -> 10.0.10.1 port 8080
 """ | sudo pfctl -a com.apple/wireguard -Ef -
