@@ -267,6 +267,13 @@ Attempt to make the request again:
 
 It works!
 
+When you are done, you can disable Wireguard and `pf` from the CLI:
+
+```shell
+$ sudo wg-quick down wg0
+$ sudo pfctl -d
+```
+
 ## References
 + https://barrowclift.me/post/wireguard-server-on-macos
 + https://blog.nviso.eu/2020/06/12/intercepting-flutter-traffic-on-ios/
