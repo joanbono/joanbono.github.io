@@ -212,7 +212,7 @@ $ sudo wg-quick up wg0
 
 And start the switch on the Wireguard application.
 
-> :warning: **Troubleshoting**
+> ⚠️ **Troubleshoting**
 Capture the incoming traffic to your Macbook on the principal interface to confirm that the traffic is coming through
 
 ```sh
