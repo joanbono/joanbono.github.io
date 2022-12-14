@@ -19,7 +19,7 @@ $ brew install wireguard-tools
 $ mkdir /usr/local/etc/wireguard/
 ```
 
-Create the [following files](https://barrowclift.me/post/wireguard-server-on-macos) inside. Replace the interface you have on your Macbook (`en0` in this case), and the internal IP range you want to use (`10.0.10.0/24` in the example):
+Create the following files inside. Replace the interface you have on your Macbook (`en0` in this case), and the internal IP range you want to use (`10.0.10.0/24` in the example):
 
 + `postup.sh` 
 
