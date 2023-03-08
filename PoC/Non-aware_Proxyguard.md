@@ -8,7 +8,7 @@ First of all, thanks to my friend [@damiapoquet](https://github.com/damiapoquet)
 + [Nviso Flutter Test apps](https://github.com/NVISOsecurity/blogposts/tree/master/flutter-testapps)
 + Jailbroken iOS device (I'm using an iPhone SE running iOS 14.3 with checkra1n)
 + Rooted Android device (I'm using a Xiaomi Redmi 9c with Pixel Experience)
-+ Computer (Macbook Pro in my case)
++ Computer (Macbook Pro in my case, [Linux instructions below](#example-for-linux-wireguard-server))
 
 ## Configuring the server
 
@@ -286,7 +286,7 @@ The following example is a configuration file for Linux. Note that `net.ipv4.ip_
 
 I have it located at `/etc/wireguard/wg0.conf`:
 
-```toml
+```conf
 [Interface]
 Address = 10.0.10.1/24
 #SaveConfig = true
