@@ -279,3 +279,28 @@ $ sudo pfctl -d
 + https://blog.nviso.eu/2020/06/12/intercepting-flutter-traffic-on-ios/
 + https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-20-04
 
+
+## Example for Linux Wireguard Server
+
+The following example is a configuration file for Linux. Note that `net.ipv4.ip_forward` will need to be set as `1` on `/etc/sysctl.conf`.  
+
+I have it located at `/etc/wireguard/wg0.conf`:
+
+```toml
+[Interface]
+Address = 10.0.10.1/24
+#SaveConfig = true
+# Add net.ipv4.ip_forward = 1 to /etc/sysctl.conf
+PostUp = ufw route allow in on wg0 out on eth0
+PostUp = iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE
+PostUp = iptables -A FORWARD -i wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+PreDown = ufw route delete allow in on wg0 out on eth0
+PreDown = iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+ListenPort = 51820
+PrivateKey = ${Server_Private_Key}
+
+[Peer]
+PublicKey = ${Client_Public_Key}
+AllowedIPs = 10.0.10.2/32
+```
