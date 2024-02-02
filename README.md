@@ -40,3 +40,13 @@ Solving everyday's Paraulògic game, killing the fun.
 ## [Non-aware Proxy apps with WireGuard](PoC/Non-aware_Proxyguard.md)
 
 Testing non-aware proxy apps (Eg: Flutter mobile apps) without painful configurations.
+
+*** 
+
+## [Non-aware Proxy apps with WireGuard](PoC/Non-aware_Proxyguard.md)
+
+Testing non-aware proxy apps (Eg: Flutter mobile apps) without painful configurations.
+
+## [AppSync Unified on unsupported devices](PoC/AppSync_unsuported_iOS.md)
+
+iPhone X with the latest iOS version available as of today (16.7.5) is not supported by AppSync Unified. How to fix it.
